@@ -84,7 +84,7 @@ const IntroQuestionScreen = (props: Props) => {
             (
             <div className='bg-scroll overflow-scroll '>
                 {questionList.map((qa:Question) => 
-                {return <QuestionCard description={qa.question} option={qa.answer} name={qa.name} />})}
+                {return <QuestionCard key={qa.question} description={qa.question} option={qa.answer} name={qa.name} />})}
                 <div className="flex justify-center my-5" >
                         {/* <FontAwesomeIcon icon="arrow-circle-right" color="black" size="3x"   /> */}
                         {/* {confirmSecond() === false ? (<p>{selected["gender"]}</p>):(<p>nope</p>) } */}

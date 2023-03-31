@@ -67,8 +67,8 @@ const Recommendations = () =>{
             <div className=" overflow-scroll  w-3/4">
                 <div className="grid grid-cols-3 gap-4">
                     {st =="default" && sortedGifts.map((gift:Gift, index) => { 
-                        return <div className="">
-                        <GiftItem key={index}  name={gift.name} img={gift.link} desc={gift.description} cost={gift.price} />
+                        return <div key={index} className="">
+                        <GiftItem   name={gift.name} img={gift.link} desc={gift.description} cost={gift.price} />
                      </div>
                     
                     } )
@@ -77,8 +77,8 @@ const Recommendations = () =>{
                         sortedGifts
                         .sort((first,last) => first.price - last.price)
                         .map((gift:Gift, index) => { 
-                            return <div className="">
-                            <GiftItem key={index}  name={gift.name} img={gift.link} desc={gift.description} cost={gift.price} />
+                            return <div key={index} className="">
+                            <GiftItem   name={gift.name} img={gift.link} desc={gift.description} cost={gift.price} />
                          </div>
                         
                         } )
@@ -87,8 +87,8 @@ const Recommendations = () =>{
                         sortedGifts
                         .sort((first,last) => last.price - first.price)
                         .map((gift:Gift, index) => { 
-                            return <div className="">
-                            <GiftItem key={index}  name={gift.name} img={gift.link} desc={gift.description} cost={gift.price} />
+                            return <div key={index} className="">
+                            <GiftItem   name={gift.name} img={gift.link} desc={gift.description} cost={gift.price} />
                          </div>
                         
                         } )
@@ -105,8 +105,8 @@ const Recommendations = () =>{
                             return 0;
                           })
                         .map((gift:Gift, index) => { 
-                            return <div className="">
-                            <GiftItem key={index}  name={gift.name} img={gift.link} desc={gift.description} cost={gift.price} />
+                            return <div key={index} className="">
+                            <GiftItem   name={gift.name} img={gift.link} desc={gift.description} cost={gift.price} />
                          </div>
                         
                         } )
