@@ -17,7 +17,7 @@ const Header = (props: Props) => {
 
     <ul className="flex flex-row ">
       <li className="nav-item mx-5">
-      <Link href='/about'  target = "_blank">about</Link>
+      <Link href='/about'  >about</Link>
         {/* <a href="/about">about</a> */}
       </li>
 
