@@ -35,7 +35,7 @@ const QuestionCard = (props: Props) => {
 
         return(
             answers.map((opt:string,index:number) => { return(
-            <div className="flex flex-row items-center my-3">
+            <div key={index} className="flex flex-row items-center my-3">
                 <input value={opt} onChange={handleChange} className="form-check-input mr-4 " type="radio" name={props.name} id={index.toString()} color="#fff"/>
                 <label className="form-check-label" htmlFor={index.toString()}>
                     {opt}

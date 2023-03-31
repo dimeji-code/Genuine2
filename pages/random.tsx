@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import GIFTS from '@/data/Gifts'
 
-const random = () => {
+const Random = () => {
     const [cur, setCurrent] = useState<number>(Math.floor(Math.random()* (GIFTS.length - 0) + 0))
 
   return (
@@ -26,4 +26,4 @@ const random = () => {
   )
 }
 
-export default random
+export default Random
