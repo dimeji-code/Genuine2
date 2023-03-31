@@ -8,17 +8,17 @@ const Main = (props: Props) => {
     <div className="flex flex-col mx-[10%] py-4  flex-4/5 h-[92vh] background   ">
             <div className="flex flex-row justify-between h-4/5">
                 <div className="flex flex-col justify-center w-1/2">
-                    <h1 className="text-7xl text-[#302e3c] my-2 font-medium">Having trouble finding the perfect gift?</h1>
-                    <h4 className="text-xl text-[#302e3c] my-3">
+                    <h1 className="text-3xl md:text-7xl text-[#302e3c] my-2 font-medium">Having trouble finding the perfect gift?</h1>
+                    <h4 className="hidden sm:text-lg md:text-xl text-[#302e3c] my-3">
                     Find popular suggestions or get unique gift ideas for that special someone.
                     </h4>
-                    <h5 className="text-xl text-[#302e3c] my-3">
+                    <h5 className="text-lg md:text-xl text-[#302e3c] my-3">
                     <a >To Begin, click on the <strong>add</strong> icon</a>
                     </h5>
                 </div>
 
                 <div className="flex flex-col w-1/2 justify-center items-center">
-                    <Link href='/survey' className=" moveUpDown border madAnim w-2/3 bg-[#f7f4f7] flex justify-center shadowInner  border-sm rounded-sm items-end border-[#f3f0f0]  duration-1000 hover:-translate-y-1">
+                    <Link href='/survey' className=" moveUpDown border madAnim w-full md:w-2/3 bg-[#f7f4f7] flex justify-center shadowInner  border-sm rounded-sm items-end border-[#f3f0f0]  duration-1000 hover:-translate-y-1">
                     <div  className=' hover:animate-spin'>
                         <img className="w-[300px] p-5 border-[#687668]  hover:cursor-pointer" src={"/add500.png"} />
                     </div>

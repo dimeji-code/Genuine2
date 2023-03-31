@@ -43,19 +43,19 @@ const Recommendations = () =>{
             <div className="w-1/4  ">
                 <h3 className="text-xl">Suggestions for <span className="text-[#354b6d] font-semibold">Recipient</span>.</h3>
                 <h4 className='mt-8'>Sort by :</h4>
-                <div className="flex flex-row items-center">
+                <div className="flex flex-row items-center my-4">
                     <input onClick={()=>{setSt('highToLow')}} className="form-check-input mr-4 " type="radio" name={'sort'} id={"1"}  color="#fff"/>
                     <label className="form-check-label" htmlFor='1'>
                         Highest to Lowest
                     </label>
                 </div>
-                <div className="flex flex-row items-center">
+                <div className="flex flex-row items-center my-4">
                     <input onClick={()=>{setSt('lowToHigh')}} className="form-check-input mr-4 " type="radio" name={'sort'} id="2"  color="#fff"/>
                     <label className="form-check-label" htmlFor='2' >
                         Lowest to Highest
                     </label>
                 </div>
-                <div className="flex flex-row items-center">
+                <div className="flex flex-row items-center my-4">
                     <input onClick={()=>{setSt('A-Z')}} className="form-check-input mr-4 " type="radio" name={'sort'} id="3"  color="#fff"/>
                     <label className="form-check-label" htmlFor='3' >
                         A-Z
@@ -65,7 +65,7 @@ const Recommendations = () =>{
             </div>
                 
             <div className=" overflow-scroll  w-3/4">
-                <div className="grid grid-cols-3 gap-4">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                     {st =="default" && sortedGifts.map((gift:Gift, index) => { 
                         return <div key={index} className="">
                         <GiftItem   name={gift.name} img={gift.link} desc={gift.description} cost={gift.price} />
