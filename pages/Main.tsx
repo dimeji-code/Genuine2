@@ -20,7 +20,7 @@ const Main = (props: Props) => {
                 <div className="flex flex-col w-1/2 justify-center items-center">
                     <Link href='/survey' className=" moveUpDown border madAnim w-full md:w-2/3 bg-[#f7f4f7] flex justify-center shadowInner  border-sm rounded-sm items-end border-[#f3f0f0]  duration-1000 hover:-translate-y-1">
                     <div  className=' hover:animate-spin'>
-                        <img className="w-[300px] p-5 border-[#687668]  hover:cursor-pointer" src={"/add500.png"} />
+                        <img alt="..." className="w-[300px] p-5 border-[#687668]  hover:cursor-pointer" src={"/add500.png"} />
                     </div>
                     </Link>
                 </div>

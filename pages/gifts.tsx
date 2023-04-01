@@ -1,12 +1,15 @@
 import React,{useState, useEffect} from 'react'
-import {useSelector} from "react-redux"
+import {useDispatch, useSelector} from "react-redux"
 import GiftItem from "../components/GiftItem"
 import GIFTS,{Gift} from "../data/Gifts"
-
+import {useRouter} from "next/router"
+import { clearOptions } from '@/reducers/questionReducer'
 const Recommendations = () =>{
     const [sortedGifts,setSortedGifts] =  useState<Gift[]>([])
     const [st,setSt] =  useState("default")
     const selected = useSelector ((state:any) => state.question.choices)
+    const dispatch = useDispatch()
+    const router = useRouter()
 
     let finalSort:Gift[] = []
 
@@ -36,7 +39,10 @@ const Recommendations = () =>{
         var inBudget:Gift[] = list.filter((item) => item.price <= selected["budget"])
         return sortByTag(inBudget)
     }
-
+    const handleChange = () =>{
+        dispatch(clearOptions({}))
+    }
+    router.events.on('routeChangeStart',handleChange )
     return(
         <div className="flex-row bg-[#ade3ad] flex w-full p-6 h-[92vh]">
             

@@ -14,7 +14,7 @@ const Random = () => {
                 <h3>{GIFTS[cur].description}</h3>
             </div>
             <div className="w-1/2">
-            <img src={GIFTS[cur].link} />
+            <img alt="..." src={GIFTS[cur].link} />
 
             </div>
         </div>

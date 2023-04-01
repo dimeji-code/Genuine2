@@ -10,7 +10,7 @@ type Props = {
 const GiftItem = (props:Props) =>{
     return(
         <div className="card bg-[#f8f8f8] text-[#111d14] shadow-sm rounded-md overflow-hidden">
-            <img src={props.img} className="card-img" alt="..."/>
+            <img alt={'/fashion.png'} src={props.img} className="card-img" />
 
             <div className="item-inner shadow-inner">
                 <div className="p-4">
