@@ -11,7 +11,7 @@ type Props = {}
 
 const Header = (props: Props) => {
   return (
-    <nav className="flex justify-between items-center text-[#1f1f2a] px-[10%] h-[8vh] w-full top-0 bg-[#fbfbfb] sticky" >
+    <header className="flex justify-between items-center text-[#1f1f2a] px-[10%] h-[8vh] w-full top-0 bg-[#fbfbfb] sticky" >
     {/* <a className={`${museomoderno.className} text-xl`} href="/">genuine</a> */}
     <Link className={`${museomoderno.className} text-xl`} href='/'>genuine</Link>
 
@@ -26,7 +26,7 @@ const Header = (props: Props) => {
         <a href='https://dimeji-code.github.io/Genuine/' target = "_blank">V1</a>
       </li>
     </ul>
-  </nav> 
+  </header> 
   )
 }
 
