@@ -11,7 +11,7 @@ type Props = {}
 
 const Header = (props: Props) => {
   return (
-    <header className="flex justify-between items-center text-[#1f1f2a] px-[10%] h-[8vh] w-full top-0 bg-[#fbfbfb] sticky" >
+    <header className="flex justify-between items-center text-[#1f1f2a] px-[10%] h-[8vh] w-full top-0 bg-[#fefefe] sticky" >
     {/* <a className={`${museomoderno.className} text-xl`} href="/">genuine</a> */}
     <Link className={`${museomoderno.className} text-xl`} href='/'>genuine</Link>
 

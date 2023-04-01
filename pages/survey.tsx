@@ -61,7 +61,7 @@ const IntroQuestionScreen = (props: Props) => {
         { 
             id=="phase 1"?
             (       
-             <div className="screen">
+             <div className="bg-scroll overflow-scroll ">
                     <div className="w-full flex flex-row my-3">
                     <img src='/gender.png' className="w-[80px] h-[80px] bg-[#589478] p-3 border rounded-md shadow-md mr-6" />
                      <QuestionCard description="Select gender of recipient" option={gender} name="gender" />
