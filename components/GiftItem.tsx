@@ -14,8 +14,8 @@ const GiftItem = (props:Props) =>{
 
             <div className="item-inner shadow-inner">
                 <div className="p-4">
-                    <h5 className="text-2xl">{props.name}</h5>
-                    <p className="card-text card-desc"> {props.desc}</p>
+                    <h5 className="text-lg md:text-2xl">{props.name}</h5>
+                    <p className="text-md md:text-xl"> {props.desc}</p>
 
                 </div>
                 <div className="p-4 text-[#519f5d] border-t">

@@ -46,16 +46,14 @@ const IntroQuestionScreen = (props: Props) => {
 
         console.log(len)
         if (len < 7){
-            // console.log(true);
             return true
         }else{
-            // console.log(false);
             return false
         }
     }
 
     return(
-        <div className="flex flex-col mx-[10%] py-4  flex-4/5 h-[92vh]   ">
+        <div className="flex flex-col bg-[#ade3ad] px-[10%] py-4  flex-4/5 h-[92vh]   ">
             <div className="w-full bg-gray-200 rounded-full h-1.5 dark:bg-gray-700 my-5">
             <div className={`bg-[#efb660] h-1.5 rounded-full duration-1000`} style={{width :`${(selectedLen/7)*100}%`}} ></div>
             </div>

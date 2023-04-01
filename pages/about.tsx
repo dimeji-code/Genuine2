@@ -4,7 +4,7 @@ type Props = {}
 
 const About = (props: Props) => {
   return (
-    <div className="flex flex-col mx-[10%] py-4  flex-4/5    ">
+    <div className="flex flex-col bg-[#ade3ad] px-[10%] py-4  flex-4/5    ">
         <div className='py-5 h-2/5'>
             <h3 className="text-4xl font-normal my-5">About Genuine</h3>
             <hr className="border-t-2 rounded-md my-5 border-t-black"></hr>

@@ -5,7 +5,7 @@ const Random = () => {
     const [cur, setCurrent] = useState<number>(Math.floor(Math.random()* (GIFTS.length - 0) + 0))
 
   return (
-    <div className='flex flex-col px-1 md:px-[10%] py-4 justify-center items-center flex-4/5 w-full min-h-[92vh]'   >
+    <div className='flex flex-col bg-[#ade3ad] px-1  md:px-[10%] py-4 justify-center items-center flex-4/5 w-full min-h-[92vh]'   >
         <div className='flex flex-row px-4 md:px-[10%] py-4 justify-center items-center flex-4/5 w-full min-h-4/5 md:min-h-3/5'   >
             <div className='mr-5 w-1/2'>
                 <h3 className='text-xl md:text-2xl font-semibold'>{GIFTS[cur].name}</h3>

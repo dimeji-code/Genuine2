@@ -11,13 +11,11 @@
     'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
     'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
     /* background-color: rgb(187, 227, 173); */
-    background-color: rgb(173, 227, 173);
+    /* background-color: rgb(173, 227, 173); */
 
-    /* background: linear-gradient(#fff,rgb(173, 227, 173)); */
+    background: linear-gradient(#fbfbfb,rgb(173, 227, 173));
   }
-.background{
-      /* background-color: rgb(173, 227, 173); */
-}
+
 .rotate{
   /* border: 1px solid black; */
   transform: rotate(0.2turn);

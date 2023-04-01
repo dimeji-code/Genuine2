@@ -34,12 +34,8 @@ export default function Home() {
         <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet"></link>
 
       </Head>
-      <main className={styles.main}>
+      <main >
         <Main/>
-        {/* <Link href={`/`}><Main/></Link> */}
-        {/* <Link href={`/about`}><About/></Link>
-        <Link href={`/intro`}><IntroQuestionScreen/></Link> */}
-
      
       </main>
     </>

@@ -5,11 +5,11 @@ type Props = {}
 
 const Main = (props: Props) => {
   return (
-    <div className="flex flex-col mx-[10%] py-4  flex-4/5 h-[92vh] background   ">
+    <div className="flex flex-col bg-[#ade3ad] px-[10%] py-4   h-[92vh]  ">
             <div className="flex flex-row justify-between h-4/5">
                 <div className="flex flex-col justify-center w-1/2">
                     <h1 className="text-3xl md:text-7xl text-[#302e3c] my-2 font-medium">Having trouble finding the perfect gift?</h1>
-                    <h4 className="hidden sm:text-lg md:text-xl text-[#302e3c] my-3">
+                    <h4 className="hidden md:inline-block sm:text-lg md:text-xl text-[#302e3c] my-3">
                     Find popular suggestions or get unique gift ideas for that special someone.
                     </h4>
                     <h5 className="text-lg md:text-xl text-[#302e3c] my-3">
