@@ -13,9 +13,9 @@ const About = (props: Props) => {
             <p  className='text-sm my-5 text-[#212730]'>* Free to use. No Sign in required *</p>
         </div>
         <div className='h-3/5 my-3'>
-            <h3 className="text-2xl md:text-4xl font-semibold md:font-normal my-5">Features</h3>
+            <h3 className="text-3xl md:text-4xl font-semibold md:font-normal my-5">Features</h3>
 
-            <div className='grid grid-cols-3 gap-4'>
+            <div className='grid grid-cols-2 md:grid-cols-3 gap-4'>
 
                 <div className='mx-2'>
                     <img src="/filter2.png" className="w-1/5"/>
@@ -25,7 +25,7 @@ const About = (props: Props) => {
                 </div>
                 <div className='mx-2'>
                     <img src="/delete2.png" className="w-1/5"/>
-                    <h4 className='text-xl md:text-3xl my-2'>Data Storage</h4>
+                    <h4 className='text-xl md:text-3xl my-2'><span className='hidden md:inline-block'>Data </span> Storage</h4>
                     <hr className="border-t-2 rounded-md my-5 border-t-black"></hr>
                     <p className='text-xl'>None of the data is stored past the gift generation cycle.
                     <br/>No piece of information entered is given to any third parties.</p>
@@ -40,7 +40,7 @@ const About = (props: Props) => {
             </div>
         </div>
         <div className='h-3/5 my-3'>
-            <h3 className="text-2xl md:text-4xl font-normal my-5">Version Comparison</h3>
+            <h3 className="text-3xl md:text-4xl font-semibold md:font-normal my-5">Version Comparison</h3>
 
             <div className='grid grid-cols-2 gap-4'>
                 <div className='mx-2'>
