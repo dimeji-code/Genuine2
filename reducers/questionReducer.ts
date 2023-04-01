@@ -31,11 +31,11 @@ const questionSlice = createSlice({
         }
         },
         clearOptions: (state,action) =>{
-            state.choices ={}
-            // return{
-            //     ...state,
-            // choices: {}
-            // }
+            // state.choices ={}
+            return{
+                ...state,
+            choices: {}
+            }
         }
     }
 

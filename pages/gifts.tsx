@@ -40,9 +40,11 @@ const Recommendations = () =>{
         return sortByTag(inBudget)
     }
     const handleChange = () =>{
+        console.log("clearing every state");
+        
         dispatch(clearOptions({}))
     }
-    router.events.on('routeChangeStart',handleChange )
+    router.events.on('routeChangeComplete',handleChange )
     return(
         <div className="flex-row bg-[#ade3ad] flex w-full p-6 h-[92vh]">
             
