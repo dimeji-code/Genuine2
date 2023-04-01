@@ -44,7 +44,11 @@ const Recommendations = () =>{
         
         dispatch(clearOptions({}))
     }
-    router.events.on('routeChangeComplete',handleChange )
+    useEffect(()=>{
+        router.events.on('routeChangeComplete',handleChange )
+
+    },[router])
+    
     return(
         <div className="flex-row bg-[#ade3ad] flex w-full p-6 h-[92vh]">
             
